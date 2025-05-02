@@ -2,9 +2,11 @@ from typing import List, Dict
 
 
 def get_input_files(ucdm: List[Dict[str, str]], parameters: Dict[str, str]) -> Dict[str, str]:
+    folder_path = os.path.dirname(os.path.abspath(__file__))
+
     return {
         "data/dsn.txt": parameters['dsn'],
-        "main.nf": file_get_contents('main.nf')
+        "main.nf": file_get_contents(folder_path + '/main.nf')
     }
 
 
