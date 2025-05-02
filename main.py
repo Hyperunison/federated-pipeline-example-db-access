@@ -4,7 +4,7 @@ from typing import List, Dict
 def get_input_files(ucdm: List[Dict[str, str]], parameters: Dict[str, str]) -> Dict[str, str]:
     return {
         "data/dsn.txt": parameters['dsn'],
-        "main.nf": get|file_get_contents('main.nf')
+        "main.nf": get_file_get_contents('main.nf')
     }
 
 
