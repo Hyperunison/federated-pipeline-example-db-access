@@ -1,5 +1,5 @@
 from typing import List, Dict
-
+import os
 
 def get_input_files(ucdm: List[Dict[str, str]], parameters: Dict[str, str]) -> Dict[str, str]:
     folder_path = os.path.dirname(os.path.abspath(__file__))
