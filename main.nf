@@ -9,7 +9,7 @@ process runPythonExample {
     publishDir '.', mode: 'copy'
     tag 'Run python-example container'
 
-    container 'entsupml/python-example:3'
+    container 'entsupml/python-example:4'
 
     input:
     path dsn_file
@@ -21,7 +21,7 @@ process runPythonExample {
     """
     mkdir -p /data
     cp ${dsn_file} /data/dsn.txt
-    python3 /app/main.py
+    python3 /app/query.py
     cp /data/result.txt result.txt
     """
 }

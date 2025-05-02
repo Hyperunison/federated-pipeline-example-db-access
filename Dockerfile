@@ -8,5 +8,5 @@ RUN pip install "pip==23.3"
 RUN pip install "sqlalchemy>=2.0.0"
 RUN pip install "psycopg2"
 
-COPY main.py /app/
+COPY query.py /app/
 
