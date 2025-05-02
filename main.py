@@ -19,7 +19,7 @@ def get_output_file_masks(parameters) -> Dict[str, str]:
 
 
 def get_nextflow_cmd(input_files: Dict[str, str], parameters, run_name, weblog_url):
-    return "nextflow run main.nf -name {} -with-report report.html -with-weblog {} -with-trace -ansi-log".format(
+    return "sudo chown -R nextflow .; nextflow run main.nf -name {} -with-report report.html -with-weblog {} -with-trace -ansi-log".format(
         run_name,
         weblog_url,
     )
