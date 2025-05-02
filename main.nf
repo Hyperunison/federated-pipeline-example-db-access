@@ -2,7 +2,7 @@
 
 nextflow.enable.dsl=2
 
-params.dsn_file = 'data/dsn.txt'
+params.dsn_file = 'dsn.txt'
 params.out_dir = 'results'
 
 process runPythonExample {
