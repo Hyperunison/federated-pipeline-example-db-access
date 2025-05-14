@@ -6,7 +6,8 @@ def get_input_files(ucdm: List[Dict[str, str]], parameters: Dict[str, str]) -> D
 
     return {
         "dsn.txt": parameters['dsn'],
-        "main.nf": file_get_contents(folder_path + '/main.nf')
+        "main.nf": file_get_contents(folder_path + '/main.nf'),
+        "nextflow.config": file_get_contents("nextflow.config"),
     }
 
 
